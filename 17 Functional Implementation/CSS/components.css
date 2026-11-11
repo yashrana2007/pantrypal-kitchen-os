@@ -1,0 +1,322 @@
+/* =========================
+   GREETING
+   ========================= */
+
+.greeting {
+    margin-bottom: var(--space-xl);
+}
+
+.greeting-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.greeting-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.greeting-description {
+    margin-top: 6px;
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--divider);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-card);
+
+    padding: var(--space-lg);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card.interactive:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* =========================
+   KITCHEN READY
+   ========================= */
+
+.kitchen-ready-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 190px;
+}
+
+.kitchen-ready-info {
+    max-width: 500px;
+}
+
+.card-eyebrow {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.card-description {
+    margin-top: 6px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Progress ring */
+
+.progress-ring {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        conic-gradient(
+            var(--primary-green) 86%,
+            #E8ECE8 86%
+        );
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.progress-ring::before {
+    content: "";
+
+    position: absolute;
+
+    width: 98px;
+    height: 98px;
+
+    background: var(--card);
+
+    border-radius: 50%;
+}
+
+.progress-value {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-number {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.progress-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+/* =========================
+   GRID
+   ========================= */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-lg);
+}
+
+/* =========================
+   INSIGHT
+   ========================= */
+
+.insight-card {
+    min-height: 190px;
+}
+
+.insight-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.insight-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #EDF6EE;
+
+    font-size: 20px;
+}
+
+.insight-title {
+    font-size: 17px;
+    font-weight: 650;
+}
+
+.insight-text {
+    margin-top: 18px;
+
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.primary-button {
+    margin-top: var(--space-lg);
+
+    background: var(--primary-green);
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: background 0.2s ease;
+}
+
+.primary-button:hover {
+    background: #256B29;
+}
+
+/* =========================
+   SMART ADD
+   ========================= */
+
+.smart-add-card {
+    min-height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.smart-add-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #EDF6EE;
+
+    font-size: 22px;
+}
+
+/* =========================
+   MEAL CARD
+   ========================= */
+
+.meal-card {
+    min-height: 190px;
+}
+
+.meal-name {
+    margin-top: 8px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.meal-meta {
+    margin-top: 6px;
+
+    display: flex;
+    gap: 12px;
+
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.match-bar {
+    margin-top: 20px;
+
+    width: 100%;
+    height: 7px;
+
+    background: #E8ECE8;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.match-progress {
+    width: 82%;
+    height: 100%;
+
+    background: var(--primary-green);
+}
+
+/* =========================
+   EXPIRING
+   ========================= */
+
+.expiring-card {
+    min-height: 190px;
+}
+
+.expiring-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: var(--space-lg);
+
+    padding-bottom: var(--space-md);
+
+    border-bottom: 1px solid var(--divider);
+}
+
+.expiring-item:last-child {
+    border-bottom: none;
+}
+
+.expiring-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.expiring-status {
+    font-size: 12px;
+    color: #B26A00;
+}

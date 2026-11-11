@@ -1,0 +1,93 @@
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .main-content {
+        padding:
+            var(--space-lg)
+            var(--space-lg)
+            calc(var(--bottom-nav-height) + var(--space-lg));
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .greeting-title {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    :root {
+        --header-height: 64px;
+        --bottom-nav-height: 68px;
+    }
+
+    .top-nav {
+        padding: 0 var(--space-md);
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .main-content {
+        padding:
+            var(--space-lg)
+            var(--space-md)
+            calc(var(--bottom-nav-height) + var(--space-lg));
+    }
+
+    .greeting {
+        margin-bottom: var(--space-lg);
+    }
+
+    .greeting-title {
+        font-size: 26px;
+    }
+
+    .greeting-description {
+        font-size: 14px;
+    }
+
+    .kitchen-ready-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xl);
+    }
+
+    .progress-ring {
+        width: 110px;
+        height: 110px;
+    }
+
+    .progress-ring::before {
+        width: 82px;
+        height: 82px;
+    }
+
+    .progress-number {
+        font-size: 23px;
+    }
+
+    .card {
+        padding: var(--space-md);
+    }
+
+    .card-title {
+        font-size: 21px;
+    }
+
+    .bottom-nav-inner {
+        max-width: none;
+    }
+}
